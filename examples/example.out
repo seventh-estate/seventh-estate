@@ -1,0 +1,12 @@
+
+function recordstep () {
+    git add .;
+    git commit -m "$1";
+}
+
+SEVENTH_ESTATE_BINARY=${SEVENTH_ESTATE_BINARY:-./seventh-estate}
+
+cp newpoll.yaml example.yaml
+cp roster.csv example-roster.csv
+
+recordstep init
